@@ -8,11 +8,11 @@
 
 
 	%rezolutie temporara de 2 ms
-%pentru a forma un semnal monoalternanta am adunat 
-%semnalul cu semnalul dublualternanta (portiunile pozitive se anuleaza
-%cu cele negative si rezulta semnal monoalternanta). Amplitudinea se imaprte la 2,
-% => semnalul ajunge la valoarea ceruta
-t=0:0.002:9; %se vor afisa 3 perioade
+        %pentru a forma un semnal monoalternanta am adunat 
+        %semnalul cu semnalul dublualternanta (portiunile pozitive se anuleaza
+        %cu cele negative si rezulta semnal monoalternanta). Amplitudinea se imaprte la 2,
+        % => semnalul ajunge la valoarea ceruta
+        t=0:0.002:9; %se vor afisa 3 perioade
 	amplitudine=0.4;
 	x=amplitudine*(sin(2*(pi/3)*t))+abs(amplitudine*(sin(2*(pi/3)*t)))
 	subplot(3,1,1)
